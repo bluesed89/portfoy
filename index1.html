@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ufuk Kocagöz — Portföy</title>
+  <meta name="description" content="Ufuk Kocagöz'ün modern portföyü: Web geliştirme (HTML, CSS, JS), Python ve C# projeleri, deneyimler ve iletişim." />
+  <meta property="og:title" content="Ufuk Kocagöz — Portföy" />
+  <meta property="og:description" content="Web geliştirme, Python, C# ve daha fazlası." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="ufuk.jpg" />
+  <meta name="theme-color" content="#0b0b0b" />
+
+  <!-- Icons & Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-Sw5xQmHI3k5qJHWY2S0m2t+1Y8qZb0N6s0m9m2ZV6PpS6f0Q4dQm8qfQdL8o8W3vQyqvJm1m4mQJ3Ue+Z0ZQw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#anasayfa" class="logo">Ufuk</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="primaryNav">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav id="primaryNav" aria-label="Ana menü" class="nav-links">
+        <a href="#anasayfa" aria-current="true">Anasayfa</a>
+        <a href="#servisler">Servisler</a>
+        <a href="#beceriler">Becerilerim</a>
+        <a href="#egitim">Eğitim</a>
+        <a href="#tecrube">Tecrübe</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="anasayfa" class="container hero">
+      <div>
+        <h1 class="hero-title">Merhaba, ben <span class="accent">Ufuk Kocagöz</span>.</h1>
+        <p class="hero-sub" id="typing" aria-live="polite">Web Geliştirici</p>
+        <p class="hero-text">19 yaşındayım. ~4 yıldır yazılım ve web geliştirme ile ilgileniyorum. Python & C# ile programlama, HTML/CSS/JS ile modern ve hızlı web arayüzleri geliştiriyorum. Bu sayfa; yaptıklarımı, becerilerimi ve benimle nasıl iletişime geçebileceğinizi özetler.</p>
+        <div class="hero-actions">
+          <a class="btn acc" href="#iletisim"><i class="fa-solid fa-paper-plane"></i>İş Ver!</a>
+          <a class="btn" href="#projeler"><i class="fa-solid fa-folder"></i>Projeler</a>
+        </div>
+        <div class="socials" aria-label="Sosyal bağlantılar">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="avatar-wrap will-reveal">
+        <figure class="avatar">
+          <img src="ufuk.jpg" alt="Ufuk Kocagöz profil fotoğrafı" loading="eager" decoding="async" width="512" height="512" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="servisler" class="container will-reveal">
+      <h2 class="section-title">Servisler</h2>
+      <p class="section-lead">Hızlı, erişilebilir ve bakımı kolay web arayüzleri. Küçük JS dokunuşlarıyla etkileşimli deneyimler.</p>
+      <div class="grid">
+        <article class="card" aria-label="Web Geliştirme">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Geliştirme</h3>
+          <p>Modern HTML, esnek CSS (Flex/Grid) ve vanilla JS ile hafif ve hızlı siteler.</p>
+        </article>
+        <article class="card" aria-label="UI/UX Tasarım">
+          <i class="fa-solid fa-shapes"></i>
+          <h3>UI/UX Tasarım</h3>
+          <p>Mobil öncelikli tasarım, tipografi ve renk uyumu, net hiyerarşi.</p>
+        </article>
+        <article class="card" aria-label="Otomasyon & Script">
+          <i class="fa-solid fa-robot"></i>
+          <h3>Otomasyon & Script</h3>
+          <p>Python/C# ile küçük otomasyonlar, veri işleme ve yardımcı araçlar.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="beceriler" class="container will-reveal">
+      <h2 class="section-title">Becerilerim</h2>
+      <p class="section-lead">Aktif olarak geliştirdiklerim ve rahat ettiğim alanlar.</p>
+      <div class="panel">
+        <div class="skill"><strong>HTML</strong><div class="bar"><span style="--w:95%"></span></div></div>
+        <div class="skill"><strong>CSS</strong><div class="bar"><span style="--w:90%"></span></div></div>
+        <div class="skill"><strong>JavaScript</strong><div class="bar"><span style="--w:70%"></span></div></div>
+        <div class="skill"><strong>Python</strong><div class="bar"><span style="--w:75%"></span></div></div>
+        <div class="skill"><strong>C#</strong><div class="bar"><span style="--w:65%"></span></div></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="egitim" class="container will-reveal">
+      <h2 class="section-title">Eğitim</h2>
+      <div class="panel timeline">
+        <div class="tl-item">
+          <h4>Öğrenci</h4>
+          <div class="meta">2025 — Günümüz</div>
+          <p>Bilgisayar Mühendisliği 2. sınıf öğrencisi , internet üzerinden alınan sertifika ve eğitim videoları ile kendimi geliştiriyorum.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="tecrube" class="container will-reveal">
+      <h2 class="section-title">Tecrübe</h2>
+      <div class="panel timeline">
+        <div class="tl-item">
+          <h4>Kişisel Projeler</h4>
+          <div class="meta">2025 — Günümüz</div>
+          <p>Portföy, küçük web uygulamaları, otomasyon scriptleri ve öğrenme amaçlı deneyler.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="iletisim" class="container contact will-reveal">
+      <div>
+        <h2 class="section-title">İletişim</h2>
+        <p class="section-lead">Birlikte çalışmak istersen mesaj bırakabilirsin. E-postayı tercih ediyorum.</p>
+        <div class="panel">
+          <form id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Ad Soyad</label>
+              <input id="name" name="name" type="text" placeholder="Adın" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="email">E‑posta</label>
+              <input id="email" name="email" type="email" placeholder="ornek@mail.com" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="message">Mesaj</label>
+              <textarea id="message" name="message" placeholder="Merhaba Ufuk..." required></textarea>
+            </div>
+            <button class="btn acc" type="submit"><i class="fa-solid fa-paper-plane"></i> Gönder</button>
+            <p id="formStatus" class="section-lead" role="status" aria-live="polite" style="margin:8px 0 0"></p>
+          </form>
+        </div>
+      </div>
+      <aside class="panel" aria-label="Hızlı bağlantılar">
+        <h3 style="margin-top:0">Hızlı Bağlantılar</h3>
+        <p><i class="fa-regular fa-envelope"></i> <a href="mailto:merhaba@example.com">ufukkocagoz@gmail.com</a></p>
+        <p><i class="fa-solid fa-file-arrow-down"></i> <a href="#" download>CV İndir (PDF)</a></p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Ufuk Kocagöz. Tüm hakları saklıdır.
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
